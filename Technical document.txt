@@ -1,0 +1,33 @@
+Technical document:
+Highlights on techstack:
+Coding
+React functional component: 
+    Followed Context API with React Hooks design pattern.
+    Custom Hooks for few repeatable functionality
+    UseReducers to manage multiple state
+    Smart, dump components    
+    Modular code 
+    Config file to manage static and configurable values
+
+Typescript: 
+    Applied typescript interfaces, structured code into modules
+    Better Refactoring, Better readability and maintainability
+    static typechecking. 
+Styles: 
+        Used Scss with module scss to avoid naming conflict, scope pollution.
+        BEM structure
+
+Things to be Considered:
+Due to lack of time the following things have not been implemented
+Unit testing
+Add more usehooks to reduce the repeatability and optimisation
+More responsive and better UI
+Call Snap logic have covered partially.The following is not considered 
+    1. Pick the player randomly at first
+    2. Call snap based on center pile click
+    3. Card style based on deck card count
+
+
+
+
+

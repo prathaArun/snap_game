@@ -1,0 +1,73 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 7.76%;
+    @media(max-width: 767.99px) {
+        flex-direction: column;
+    }
+   
+    &__col {
+        height: 40vh;
+        width: 30%;
+        border: 1px solid #ccc;
+        background-color: #ccc;
+        @media(max-width: 767.99px) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    &__auto-player-container {
+       background: green;
+    //    pointer-events: none; 
+    }
+
+    &__user-player-container {
+        background: orange 
+     }
+    &__open-card-stack-container {
+        background: transparent;
+        position: relative;
+    
+        &__card-side-display {
+            position: absolute;
+            margin: 0.25em;
+            font-size: 1.75em;
+            &:nth-child(1) {
+                left: 0;
+                top: 0;
+            }
+            &:nth-child(2) {
+                right: 0;
+                top: 0;
+            }
+            &:nth-child(3) {
+                left: 0;
+                bottom: 0;
+                transform: rotate(180deg);
+            }
+            &:nth-child(4) {
+                right: 0;
+                bottom: 0;
+                transform: rotate(180deg);
+            }
+            p {
+                margin: 0;
+            }
+            &__img {
+                img{
+                    height: 40px;
+                    width: 35px;
+                    background-repeat: no-repeat;
+                    overflow: hidden;
+                    background-size: 30px auto;
+                } 
+            
+        }
+        }
+       
+    }
+}
+
+div[disabled] {
+    pointer-events: none;
+  }
